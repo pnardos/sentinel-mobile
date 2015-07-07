@@ -10,16 +10,17 @@
 .btn-login {
     @extend %btn;
     font-family: $font-family--primary;
-    font-weight: $font-weight--bold;
-    font-size: rem(22px);
-    text-transform: uppercase;
-    color: $white;
-    letter-spacing: rem(0.6px);
-    background: $centuria;
+    font-weight: $font-weight--medium;
+    font-size: rem(28px);
+    text-transform: capitalize;
+    color: $centuria;
+    background: $white;
+    letter-spacing: rem(1.05px);
+    line-height: rem(34px);
     margin: 0 auto rem(48px) auto;
     padding: rem(12px) rem(24px);
     display: block;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 // Offset
