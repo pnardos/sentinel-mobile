@@ -1,86 +1,18 @@
 // ==========================================================================
 // Page layouts
 // ==========================================================================
-aside {
-  background: $sidebar;
+.splash-bg {
+  background: $centuria-haze;
+  height: 100%;
   margin: 0;
-  padding-top: rem(24px);
-  padding-left: 0;
-  min-height: 100%;
-  position: fixed;
-  top: 0;
-  
-  h1 {
-    img {
-      display: block;
-      width: auto;
-      margin: 0 auto;
-    }
-  }
-}
-
-.sidebar--list {
-  margin: rem(32px) 0 0 0;
   padding: 0;
-  padding-left: 0;
-  
-  @include m(item) {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  div:nth-child(4) {
-      padding-left: 0;
-      
-      a {
-        padding-left: rem(28px);
-      }
-    }
+  position: relative;
 }
 
-.sidebar--list__item {
-  margin-bottom: rem(24px);
-  padding-left: rem(28px);
-  a {
-    margin: 0;
-    padding: 0;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: $font-family--primary;
-    font-weight: $font-weight--light;
-    font-size: rem(16px);
-    letter-spacing: rem(0.6px);
-  }
-  
-  i {
-    margin-right: rem(18px);
-  }
-}
-
-div.manage--list {
-    margin: rem(12px) 0 0 0;
-    padding: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-  
-    div.manage--list__item {
-      margin: 0;
-      padding: 0 0 rem(12px) 0;
-  
-      a {
-        width: 100%;
-        display: block;
-        padding-left: rem(74px);
-        font-size: rem(15px);
-        letter-spacing: rem(0.8px);
-      }
-    }
-
-    div.manage--list__item:first-child {
-          padding-top: rem(12px);
-    }
-
-    div.manage--list__item:nth-child(4) {
-         padding-left: 0;
-    }
+.splash-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hidden {
