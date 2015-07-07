@@ -20,8 +20,8 @@
 <body>
    <section class="app-bar">
    	<div class="grid__col--2 menu">
-   		<a href="#"><img src="images/menu.png" alt=""></a>
-   		<h4 class="back-headline">Visit</h4>
+   		<a href="#"><img src="images/back-button.png" alt=""></a>
+   		<h4 class="back-headline">Unit Information</h4>
    	</div>
    	<div class="grid grid__col--2">
    		<img src="images/app-bar-logo.png" alt="">
@@ -29,38 +29,29 @@
    </section>
     <section class="app-container">
       <div class="grid grid__col--5 visits">
-      	<h2 class="visitor-headline">Visitor Details</h2>
-      	<div class="grid__col--3 profile">
-      		<a href="#">
-      			<img src="images/profile-pic.png" alt="Profile picture upload">
-      			<p>Add photo</p>
-      		</a>
-      	</div>
-        <div class="grid__col--9 no-padding">
-          <label for="username" class="login-label">First Name</label>
-          <input type="text">
-        </div>
-        <div class="grid__col--9 no-padding">
-          <label for="username" class="login-label">Last Name</label>
-          <input type="text">
-        </div>
-        <div class="grid__col--9 no-padding right">
-          <label for="username" class="login-label">ID Number</label>
-          <input type="text">
-        </div>
+      	<h2 class="visitor-headline">Unit Information</h2>
+      	
         <div class="grid__col--9 no-padding right select-style">
-          <label for="username" class="login-label">ID Type</label>
+          <label for="username" class="login-label">Unit</label>
           <select name="idtype" id="select">
-            <option value="1">Identification Card</option>
-            <option value="2">Passport</option>
-            <option value="3">Diplomatic Passport</option>
-            <option value="4">Military ID</option>
+            <option value="1">KCB Group</option>
+            <option value="2">KQ HQ</option>
+            <option value="3">Centuria</option>
+            <option value="4">IBM</option>
           </select>
           
         </div>
-        <div class="grid__col--9 no-padding unit-link">
-          <a href="unit-details.html">Unit Information <img src="images/arrow-forward.png" alt="forward button"></a>
+        <div class="grid__col--9 no-padding right select-style">
+          <label for="username" class="login-label">Contact Person</label>
+          <select name="idtype" id="select">
+            <option value="1">Joe Musia</option>
+            <option value="2">James Oyoo</option>
+            <option value="3">Elliot Jones</option>
+            <option value="4">Kyalo Mwaniki</option>
+          </select>
+          
         </div>
+        
       </div>
       
     </section>
