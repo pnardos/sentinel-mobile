@@ -604,6 +604,89 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 .right {
   float: right; }
 
+/* Visit screen */
+/* line 154, ../components/sass/layout/_layout.scss */
+.app-bar {
+  background: #501E70;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+  height: 4rem;
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24); }
+
+/* line 170, ../components/sass/layout/_layout.scss */
+.menu a {
+  display: inline-block; }
+  /* line 172, ../components/sass/layout/_layout.scss */
+  .menu a img {
+    display: inline-block;
+    width: auto;
+    margin: 0.4375rem 0 0 0;
+    float: left; }
+
+/* line 181, ../components/sass/layout/_layout.scss */
+.app-container {
+  background: #fafafa;
+  display: block;
+  overflow: hidden;
+  height: 100%; }
+
+/* Visits */
+/* line 191, ../components/sass/layout/_layout.scss */
+.visits input[type=text] {
+  border-bottom: 1px solid #8E8E8E;
+  color: #575757; }
+/* line 196, ../components/sass/layout/_layout.scss */
+.visits label {
+  color: #575757; }
+
+/* line 201, ../components/sass/layout/_layout.scss */
+.visitor-headline {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #575757;
+  letter-spacing: 0.025rem;
+  line-height: 1.375rem;
+  display: block;
+  margin-top: 1.625rem;
+  margin-bottom: 1.125rem;
+  margin-left: 8.125rem; }
+
+/* line 216, ../components/sass/layout/_layout.scss */
+.profile a img {
+  display: block;
+  margin: 0 auto;
+  width: auto; }
+/* line 222, ../components/sass/layout/_layout.scss */
+.profile a p {
+  text-align: center;
+  font-size: 0.875rem;
+  letter-spacing: 0.025rem;
+  color: #575757;
+  margin-top: 0.75rem; }
+
+/* line 232, ../components/sass/layout/_layout.scss */
+.unit-link {
+  float: right;
+  display: block;
+  margin-top: 1.625rem; }
+  /* line 236, ../components/sass/layout/_layout.scss */
+  .unit-link a {
+    float: right;
+    color: #E380CA; }
+    /* line 239, ../components/sass/layout/_layout.scss */
+    .unit-link a img {
+      margin: 0.3125rem 0 0 0.75rem;
+      display: block;
+      float: right; }
+
 /* line 7, ../components/sass/modules/_extends.scss */
 .form__btn, [class^="btn--"], .btn-login {
   padding: 15px 30px;
@@ -815,13 +898,14 @@ input[type=text], input[type=password] {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 0.025rem; }
 
-/* line 131, ../components/sass/modules/_form.scss */
+/* line 132, ../components/sass/modules/_form.scss */
 input[type=text]:focus, input[type=password]:focus {
   border-bottom: 1px solid #AB3A8E; }
 
-/* line 136, ../components/sass/modules/_form.scss */
+/* line 137, ../components/sass/modules/_form.scss */
 ::-webkit-input-placeholder {
   color: #E5E5E5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -830,7 +914,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 145, ../components/sass/modules/_form.scss */
+/* line 146, ../components/sass/modules/_form.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #E5E5E5;
@@ -840,7 +924,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 154, ../components/sass/modules/_form.scss */
+/* line 155, ../components/sass/modules/_form.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #E5E5E5;
@@ -850,7 +934,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 163, ../components/sass/modules/_form.scss */
+/* line 164, ../components/sass/modules/_form.scss */
 :-ms-input-placeholder {
   color: #E5E5E5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -859,63 +943,64 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 174, ../components/sass/modules/_form.scss */
+/* line 175, ../components/sass/modules/_form.scss */
 .select-style {
-  padding: 0;
+  padding: 0.75rem 0 0 0;
   margin: 0;
-  border: 1px solid #ccc;
-  width: 120px;
-  border-radius: 3px;
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #8E8E8E;
+  border-radius: 0px;
   overflow: hidden;
-  background-color: #fff;
-  background: #fff;
-  position: relative; }
+  background-color: transparent;
+  background: transparent;
+  position: relative;
+  display: block; }
 
-/* line 186, ../components/sass/modules/_form.scss */
+/* line 193, ../components/sass/modules/_form.scss */
 .select-style:after {
   top: 50%;
   right: 3%;
-  border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-color: transparent;
-  border-top-color: #6F6F6F;
-  border-width: 5px;
   margin-top: -2px;
   z-index: 100; }
 
-/* line 202, ../components/sass/modules/_form.scss */
+/* line 205, ../components/sass/modules/_form.scss */
 .select-style select {
   padding: 9px 0;
-  margin: 0 0 0 0.625rem;
+  margin: 0 0;
   width: 100%;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #6F6F6F;
   border: none;
+  cursor: pointer;
   box-shadow: none;
-  background-color: transparent;
-  background-image: none;
+  background: transparent url(../images/select-arrow.png) no-repeat 95% 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
 
-/* line 219, ../components/sass/modules/_form.scss */
+/* line 223, ../components/sass/modules/_form.scss */
 .select-style select:focus {
   outline: none; }
 
-/* line 223, ../components/sass/modules/_form.scss */
+/* line 227, ../components/sass/modules/_form.scss */
 .login-label {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #fff;
   letter-spacing: 0.0375rem;
-  line-height: 1.1875rem; }
+  line-height: 1.1875rem;
+  padding-bottom: 0.75rem;
+  display: block; }
 
 /* line 1, ../components/sass/modules/_buttons.scss */
 [class^="btn--"] {
