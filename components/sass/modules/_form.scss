@@ -112,11 +112,12 @@ input[type=radio]:not(old):checked + label > span > span{
 input[type=text], input[type=password] {
   margin-bottom: rem(36px);
   width: 100%;
+  background: transparent;
   border:{
    top: none;
    left: 0;
     right: 0;
-    bottom: 1px solid $border;
+    bottom: 1px solid $white;
   }
   
   outline: 0;
@@ -124,6 +125,7 @@ input[type=text], input[type=password] {
   font-family: $font-family--primary;
   font-weight: $font-weight--light;
   font-size: rem(24px);
+  color: $white;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -216,6 +218,15 @@ input[type=text]:focus, input[type=password]:focus {
 
 .select-style select:focus {
     outline: none;
+}
+
+.login-label {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  font-size: rem(16px);
+  color: $white;
+  letter-spacing: rem(0.6px);
+  line-height: rem(19px);
 }
 
 
