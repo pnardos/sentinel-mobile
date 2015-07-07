@@ -150,6 +150,101 @@
 }
 
 
+/* Visit screen */
+.app-bar {
+  background: $centuria-haze;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding-top: rem(20px);
+  padding-left: rem(24px);
+  height: rem(64px);
+   -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.menu {
+  a {
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: auto;
+      margin: rem(7px) 0 0 0;
+      float: left;
+    }
+  }
+}
+
+.app-container {
+  background: $app-bg;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+/* Visits */
+.visits {
+  input[type=text] {
+    border-bottom: 1px solid $centuria-gray;
+    color: $centuria-text;
+  }
+  
+  label {
+    color: $centuria-text;
+  }
+}
+
+.visitor-headline {
+  font-family: $font-family--primary;
+  font-size: rem(18px);
+  font-weight: $font-weight--medium;
+  color: $centuria-text;
+  letter-spacing: rem(0.4px);
+  line-height: rem(22px);
+  display: block;
+  margin-top: rem(26px);
+  margin-bottom: rem(18px);
+  margin-left: rem(130px);
+}
+
+.profile {
+  a {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+    
+    p {
+      text-align: center;
+      font-size: rem(14px);
+      letter-spacing: rem(0.4px);
+      color: $centuria-text;
+      margin-top: rem(12px);
+    }
+  }
+}
+
+.unit-link {
+  float: right;
+  display: block;
+  margin-top: rem(26px);
+  a {
+    float: right;
+    color: $purple-light;
+    img {
+      margin: rem(5px) 0 0 rem(12px);
+      display: block;
+      float: right;
+    }
+  }
+}
+
+
 
 
 
