@@ -476,22 +476,31 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   padding: 0;
   position: relative;
   overflow: hidden; }
+  /* line 12, ../components/sass/layout/_layout.scss */
+  .splash-bg p {
+    color: #fff;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.025rem;
+    line-height: 1.1875rem; }
 
-/* line 13, ../components/sass/layout/_layout.scss */
+/* line 23, ../components/sass/layout/_layout.scss */
 .splash-logo {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
-/* line 19, ../components/sass/layout/_layout.scss */
+/* line 29, ../components/sass/layout/_layout.scss */
 .hidden {
   display: none; }
 
-/* line 23, ../components/sass/layout/_layout.scss */
+/* line 33, ../components/sass/layout/_layout.scss */
 .show {
   display: block; }
 
-/* line 27, ../components/sass/layout/_layout.scss */
+/* line 37, ../components/sass/layout/_layout.scss */
 #manage-dropdown {
   max-height: 0;
   overflow-y: hidden;
@@ -500,49 +509,49 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   -o-transition: max-height 0.5s ease-in-out;
   transition: max-height 0.5s ease-in-out; }
 
-/* line 35, ../components/sass/layout/_layout.scss */
+/* line 45, ../components/sass/layout/_layout.scss */
 #manage-stuff:hover div#manage-dropdown {
   max-height: 240px; }
 
-/* line 37, ../components/sass/layout/_layout.scss */
+/* line 47, ../components/sass/layout/_layout.scss */
 .active {
   background: rgba(255, 255, 255, 0.1);
   border-left: 3px solid #E45635;
   padding: 0.9375rem 0 0.9375rem 1.25rem;
   width: 100%; }
-  /* line 43, ../components/sass/layout/_layout.scss */
+  /* line 53, ../components/sass/layout/_layout.scss */
   .active a {
     color: #fff;
     margin: 0; }
 
-/* line 51, ../components/sass/layout/_layout.scss */
+/* line 61, ../components/sass/layout/_layout.scss */
 .user--nav {
   margin: 2.375rem 0 0 0;
   padding: 0; }
 
-/* line 56, ../components/sass/layout/_layout.scss */
+/* line 66, ../components/sass/layout/_layout.scss */
 .user--nav__item {
   display: inline;
   margin: 0;
   padding: 0; }
-  /* line 61, ../components/sass/layout/_layout.scss */
+  /* line 71, ../components/sass/layout/_layout.scss */
   .user--nav__item a {
     color: #4B538B; }
-  /* line 65, ../components/sass/layout/_layout.scss */
+  /* line 75, ../components/sass/layout/_layout.scss */
   .user--nav__item:first-child {
     margin-right: 1.25rem; }
 
-/* line 72, ../components/sass/layout/_layout.scss */
+/* line 82, ../components/sass/layout/_layout.scss */
 .logo-login {
   margin-top: 3rem; }
-  /* line 76, ../components/sass/layout/_layout.scss */
+  /* line 86, ../components/sass/layout/_layout.scss */
   .logo-login img {
     display: block;
     width: auto;
     margin: 0 auto 1.5rem auto; }
 
-/* line 83, ../components/sass/layout/_layout.scss */
-.headline-login {
+/* line 93, ../components/sass/layout/_layout.scss */
+.headline-login, .back-headline {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -552,11 +561,34 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.8125rem;
   color: #fff; }
 
-/* line 94, ../components/sass/layout/_layout.scss */
+/* line 104, ../components/sass/layout/_layout.scss */
+.back-headline {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 1.625rem;
+  margin-bottom: 0;
+  padding: 0; }
+
+/* line 113, ../components/sass/layout/_layout.scss */
+.back {
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+  display: block; }
+  /* line 118, ../components/sass/layout/_layout.scss */
+  .back a {
+    display: inline-block; }
+    /* line 121, ../components/sass/layout/_layout.scss */
+    .back a img {
+      display: inline-block;
+      width: auto;
+      margin: 0.4375rem 0 0 0;
+      float: left; }
+
+/* line 130, ../components/sass/layout/_layout.scss */
 .lost-password {
   width: auto;
   text-align: center; }
-  /* line 98, ../components/sass/layout/_layout.scss */
+  /* line 134, ../components/sass/layout/_layout.scss */
   .lost-password a {
     font-family: Lato-Regular;
     font-size: 16px;
@@ -564,11 +596,11 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
     letter-spacing: 0.025rem;
     line-height: 1.1875rem;
     text-align: center; }
-    /* line 106, ../components/sass/layout/_layout.scss */
+    /* line 142, ../components/sass/layout/_layout.scss */
     .lost-password a:hover {
       opacity: 0.8; }
 
-/* line 112, ../components/sass/layout/_layout.scss */
+/* line 148, ../components/sass/layout/_layout.scss */
 .right {
   float: right; }
 

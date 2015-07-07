@@ -8,6 +8,16 @@
   padding: 0;
   position: relative;
   overflow: hidden;
+  
+  p {
+    color: $white;
+    font-family: $font-family--primary;
+    font-size: rem(16px);
+    font-weight: $font-weight--light;
+    text-align: center;
+    letter-spacing: rem(0.4px);
+    line-height: rem(19px);
+  }
 }
 
 .splash-logo {
@@ -89,6 +99,32 @@
   letter-spacing: rem(0.6px);
   line-height: rem(29px);
   color: $white;
+}
+
+.back-headline {
+  @extend .headline-login;
+  font-size: rem(16px);
+  display: inline-block;
+  margin-left: rem(26px);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.back {
+  margin-top: rem(48px);
+  padding-left: rem(24px);
+  display: block;
+  
+  a {
+    display: inline-block;
+    
+    img {
+      display: inline-block;
+      width: auto;
+      margin: rem(7px) 0 0 0;
+      float: left;
+    }
+  }
 }
 
 .lost-password {
