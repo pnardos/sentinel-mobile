@@ -649,22 +649,33 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 /* line 201, ../components/sass/layout/_layout.scss */
 .visitor-headline {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 300;
   color: #575757;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.0375rem;
   line-height: 1.375rem;
   display: block;
   margin-top: 1.625rem;
   margin-bottom: 1.125rem;
-  margin-left: 8.125rem; }
+  margin-left: 0; }
 
-/* line 216, ../components/sass/layout/_layout.scss */
+/* line 214, ../components/sass/layout/_layout.scss */
+.app-bar-headline {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #fff;
+  letter-spacing: 0.05rem;
+  line-height: 1.375rem;
+  display: inline-block;
+  margin-left: 1.5rem; }
+
+/* line 227, ../components/sass/layout/_layout.scss */
 .profile a img {
   display: block;
   margin: 0 auto;
   width: auto; }
-/* line 222, ../components/sass/layout/_layout.scss */
+/* line 233, ../components/sass/layout/_layout.scss */
 .profile a p {
   text-align: center;
   font-size: 0.875rem;
@@ -672,23 +683,41 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   color: #575757;
   margin-top: 0.75rem; }
 
-/* line 232, ../components/sass/layout/_layout.scss */
+/* line 243, ../components/sass/layout/_layout.scss */
 .unit-link {
   float: right;
   display: block;
   margin-top: 1.625rem; }
-  /* line 236, ../components/sass/layout/_layout.scss */
+  /* line 247, ../components/sass/layout/_layout.scss */
   .unit-link a {
     float: right;
     color: #E380CA; }
-    /* line 239, ../components/sass/layout/_layout.scss */
+    /* line 250, ../components/sass/layout/_layout.scss */
     .unit-link a img {
       margin: 0.3125rem 0 0 0.75rem;
       display: block;
       float: right; }
 
+/* line 259, ../components/sass/layout/_layout.scss */
+.appt-text p {
+  font-family: Lato-LightItalic;
+  font-size: 1.125rem;
+  color: #AB3A8E;
+  letter-spacing: 0.03375rem;
+  line-height: 1.375rem;
+  text-align: center; }
+
+/* line 269, ../components/sass/layout/_layout.scss */
+.btm-sep {
+  border-bottom: 1px solid #AB3A8E;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  float: none !important; }
+
 /* line 7, ../components/sass/modules/_extends.scss */
-.form__btn, [class^="btn--"], .btn-login {
+.form__btn, [class^="btn--"], .btn-login, .btn-search, .btn-check {
   padding: 15px 30px;
   border: 0;
   border-radius: 2px;
@@ -702,10 +731,10 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   display: block;
   outline: 0; }
   /* line 20, ../components/sass/modules/_extends.scss */
-  .form__btn:hover, [class^="btn--"]:hover, .btn-login:hover {
+  .form__btn:hover, [class^="btn--"]:hover, .btn-login:hover, .btn-search:hover, .btn-check:hover {
     opacity: 0.75; }
   /* line 23, ../components/sass/modules/_extends.scss */
-  .form__btn:active, [class^="btn--"]:active, .btn-login:active {
+  .form__btn:active, [class^="btn--"]:active, .btn-login:active, .btn-search:active, .btn-check:active {
     opacity: initial; }
 
 /* line 30, ../components/sass/modules/_extends.scss */
@@ -945,7 +974,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* line 175, ../components/sass/modules/_form.scss */
 .select-style {
-  padding: 0.75rem 0 0 0;
+  padding: 0;
   margin: 0;
   border-top: none;
   border-left: 0;
@@ -972,7 +1001,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* line 205, ../components/sass/modules/_form.scss */
 .select-style select {
-  padding: 9px 0;
+  padding: 4px 0 9px 0;
   margin: 0 0;
   width: 100%;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1024,47 +1053,84 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   overflow: hidden; }
 
-/* line 28, ../components/sass/modules/_buttons.scss */
+/* line 27, ../components/sass/modules/_buttons.scss */
+.btn-search {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  color: #AB3A8E;
+  background: #AB3A8E url(../images/search.png) 50% 50% no-repeat;
+  letter-spacing: 0.06563rem;
+  line-height: 2.125rem;
+  margin: 0 auto 3rem auto;
+  padding: 0.75rem 2.375rem;
+  display: block;
+  overflow: hidden;
+  height: 3.75rem; }
+
+/* line 44, ../components/sass/modules/_buttons.scss */
+.btn-check {
+  color: #fff;
+  background: #AB3A8E;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 0.05125rem;
+  line-height: 1.6875rem;
+  padding: 1rem; }
+
+/* line 59, ../components/sass/modules/_buttons.scss */
 .offset-top-10 {
   margin-top: 10%; }
 
-/* line 32, ../components/sass/modules/_buttons.scss */
+/* line 63, ../components/sass/modules/_buttons.scss */
 .offset-top-30 {
   margin-top: 30%; }
 
-/* line 35, ../components/sass/modules/_buttons.scss */
+/* line 66, ../components/sass/modules/_buttons.scss */
 .offset-top-8 {
   margin-top: .8%; }
 
-/* line 38, ../components/sass/modules/_buttons.scss */
+/* line 69, ../components/sass/modules/_buttons.scss */
 .offset-bottom-10 {
   margin-bottom: 10%; }
 
-/* line 41, ../components/sass/modules/_buttons.scss */
+/* line 72, ../components/sass/modules/_buttons.scss */
 .offset-bottom-5 {
   margin-bottom: 5%; }
 
-/* line 45, ../components/sass/modules/_buttons.scss */
+/* line 76, ../components/sass/modules/_buttons.scss */
+.offset-bottom-3 {
+  margin-bottom: 3%; }
+
+/* line 80, ../components/sass/modules/_buttons.scss */
 .offset-top-5 {
   margin-top: 5%; }
 
-/* line 49, ../components/sass/modules/_buttons.scss */
+/* line 84, ../components/sass/modules/_buttons.scss */
 .offset-top-2 {
   margin-top: 2%; }
 
-/* line 53, ../components/sass/modules/_buttons.scss */
+/* line 88, ../components/sass/modules/_buttons.scss */
 .offset-padding-10 {
   padding: 0 0.625rem; }
 
-/* line 57, ../components/sass/modules/_buttons.scss */
+/* line 92, ../components/sass/modules/_buttons.scss */
 .offset-padding-left {
   padding: 2%; }
 
-/* line 61, ../components/sass/modules/_buttons.scss */
+/* line 96, ../components/sass/modules/_buttons.scss */
 .offset-margin-left {
   margin: 2%; }
 
-/* line 65, ../components/sass/modules/_buttons.scss */
+/* line 100, ../components/sass/modules/_buttons.scss */
+.offset-52 {
+  margin-right: 6%; }
+
+/* line 104, ../components/sass/modules/_buttons.scss */
 .offset-margin-bottom-0 {
   margin: 0; }
 
