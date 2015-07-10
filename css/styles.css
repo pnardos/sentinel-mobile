@@ -1115,26 +1115,30 @@ input[type=text]:focus, input[type=password]:focus {
   margin-top: 2%; }
 
 /* line 88, ../components/sass/modules/_buttons.scss */
+.offset-top-3 {
+  margin-top: 3%; }
+
+/* line 92, ../components/sass/modules/_buttons.scss */
 .offset-padding-10 {
   padding: 0 0.625rem; }
 
-/* line 92, ../components/sass/modules/_buttons.scss */
+/* line 96, ../components/sass/modules/_buttons.scss */
 .offset-padding-left {
   padding: 2%; }
 
-/* line 96, ../components/sass/modules/_buttons.scss */
+/* line 100, ../components/sass/modules/_buttons.scss */
 .offset-margin-left {
   margin: 2%; }
 
-/* line 100, ../components/sass/modules/_buttons.scss */
+/* line 104, ../components/sass/modules/_buttons.scss */
 .offset-52 {
   margin-right: 6%; }
 
-/* line 104, ../components/sass/modules/_buttons.scss */
+/* line 108, ../components/sass/modules/_buttons.scss */
 .offset-margin-bottom-0 {
   margin: 0; }
 
-/* line 108, ../components/sass/modules/_buttons.scss */
+/* line 112, ../components/sass/modules/_buttons.scss */
 .offset-top-app-bar {
   margin-top: 1.125rem; }
 
