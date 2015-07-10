@@ -200,15 +200,26 @@
 
 .visitor-headline {
   font-family: $font-family--primary;
-  font-size: rem(18px);
-  font-weight: $font-weight--medium;
+  font-size: rem(20px);
+  font-weight: $font-weight--light;
   color: $centuria-text;
-  letter-spacing: rem(0.4px);
+  letter-spacing: rem(0.6px);
   line-height: rem(22px);
   display: block;
   margin-top: rem(26px);
   margin-bottom: rem(18px);
-  margin-left: rem(130px);
+  margin-left: 0;
+}
+
+.app-bar-headline {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+  font-size: rem(18px);
+  color: $white;
+  letter-spacing: rem(0.8px);
+  line-height: rem(22px);
+  display: inline-block;
+  margin-left: rem(24px);
 }
 
 .profile {
@@ -242,6 +253,26 @@
       float: right;
     }
   }
+}
+
+.appt-text {
+  p {
+    font-family: Lato-LightItalic;
+    font-size: rem(18px);
+    color: $centuria;
+    letter-spacing: rem(0.54px);
+    line-height: rem(22px); 
+    text-align: center;
+  }
+}
+
+.btm-sep {
+  border-bottom: 1px solid $centuria;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  float: none !important;
 }
 
 
