@@ -716,6 +716,61 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   width: 20%;
   float: none !important; }
 
+/* Appointments */
+/* line 279, ../components/sass/layout/_layout.scss */
+.appointment-table {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid #E5E5E5;
+  background: #fff;
+  margin-top: 0.75rem; }
+
+/* line 289, ../components/sass/layout/_layout.scss */
+.appointment-title, .appointment-details {
+  display: block;
+  overflow: hidden;
+  margin-top: 1.125rem;
+  margin-left: 7.0%; }
+
+/* line 296, ../components/sass/layout/_layout.scss */
+.appointment-title__list, .appointment-details__list {
+  display: inline-block;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #575757;
+  line-height: 1.1875rem;
+  width: 16%; }
+
+/* line 306, ../components/sass/layout/_layout.scss */
+.appointment-details {
+  margin-top: 0;
+  margin-left: 0;
+  border-bottom: 1px solid #E5E5E5; }
+
+/* line 313, ../components/sass/layout/_layout.scss */
+.appointment-details__list {
+  font-size: 1.125rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.375rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 9%;
+  float: left;
+  width: 16%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+/* line 328, ../components/sass/layout/_layout.scss */
+.no-margin-right {
+  margin-right: 0; }
+
+/* line 332, ../components/sass/layout/_layout.scss */
+.auto-width {
+  width: auto; }
+
 /* line 7, ../components/sass/modules/_extends.scss */
 .form__btn, [class^="btn--"], .btn-login, .btn-search, .btn-check {
   padding: 15px 30px;
@@ -862,31 +917,32 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 /* line 58, ../components/sass/modules/_form.scss */
 input[type=checkbox]:not(old),
 input[type=radio]:not(old) {
-  width: 2em;
-  margin: 0;
+  width: 1.375rem;
+  height: 1.25rem;
+  margin: 0.25rem 1.125rem 0 1.5rem;
   padding: 0;
   font-size: 1em;
-  opacity: 0;
-  position: absolute; }
+  opacity: 1;
+  float: left; }
 
-/* line 68, ../components/sass/modules/_form.scss */
+/* line 69, ../components/sass/modules/_form.scss */
 input[type=checkbox]:not(old) + label > span,
 input[type=radio]:not(old) + label > span {
   display: inline-block;
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 9.375rem;
+  height: 9.375rem;
   margin: 0.25em 0.5em 0.25em 0.25em;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #8E8E8E;
   border-radius: 50%;
   background: #fff;
   vertical-align: bottom; }
 
-/* line 80, ../components/sass/modules/_form.scss */
+/* line 81, ../components/sass/modules/_form.scss */
 input[type=checkbox]:not(old):checked + label > span,
 input[type=radio]:not(old):checked + label > span {
   background: #fff; }
 
-/* line 85, ../components/sass/modules/_form.scss */
+/* line 86, ../components/sass/modules/_form.scss */
 input[type=checkbox]:not(old):checked + label > span:before {
   content: '✓';
   display: block;
@@ -898,7 +954,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
   text-shadow: 0 0 0.0714em #73994d;
   font-weight: bold; }
 
-/* line 97, ../components/sass/modules/_form.scss */
+/* line 98, ../components/sass/modules/_form.scss */
 input[type=radio]:not(old):checked + label > span > span {
   display: block;
   width: 0.5625rem;
@@ -913,7 +969,7 @@ input[type=radio]:not(old):checked + label > span > span {
   background-image: -webkit-linear-gradient(#b3d98c, #99cc66);
   background-image: linear-gradient(#b3d98c, #99cc66); }
 
-/* line 112, ../components/sass/modules/_form.scss */
+/* line 113, ../components/sass/modules/_form.scss */
 input[type=text], input[type=password] {
   margin-bottom: 2.25rem;
   width: 100%;
@@ -930,11 +986,11 @@ input[type=text], input[type=password] {
   color: #fff;
   letter-spacing: 0.025rem; }
 
-/* line 132, ../components/sass/modules/_form.scss */
+/* line 133, ../components/sass/modules/_form.scss */
 input[type=text]:focus, input[type=password]:focus {
   border-bottom: 1px solid #AB3A8E; }
 
-/* line 137, ../components/sass/modules/_form.scss */
+/* line 138, ../components/sass/modules/_form.scss */
 ::-webkit-input-placeholder {
   color: #E5E5E5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -943,7 +999,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 146, ../components/sass/modules/_form.scss */
+/* line 147, ../components/sass/modules/_form.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #E5E5E5;
@@ -953,7 +1009,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 155, ../components/sass/modules/_form.scss */
+/* line 156, ../components/sass/modules/_form.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #E5E5E5;
@@ -963,7 +1019,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 164, ../components/sass/modules/_form.scss */
+/* line 165, ../components/sass/modules/_form.scss */
 :-ms-input-placeholder {
   color: #E5E5E5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -972,7 +1028,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 1.5rem;
   letter-spacing: 0.025rem; }
 
-/* line 175, ../components/sass/modules/_form.scss */
+/* line 176, ../components/sass/modules/_form.scss */
 .select-style {
   padding: 0;
   margin: 0;
@@ -987,7 +1043,7 @@ input[type=text]:focus, input[type=password]:focus {
   position: relative;
   display: block; }
 
-/* line 193, ../components/sass/modules/_form.scss */
+/* line 194, ../components/sass/modules/_form.scss */
 .select-style:after {
   top: 50%;
   right: 3%;
@@ -999,7 +1055,7 @@ input[type=text]:focus, input[type=password]:focus {
   margin-top: -2px;
   z-index: 100; }
 
-/* line 205, ../components/sass/modules/_form.scss */
+/* line 206, ../components/sass/modules/_form.scss */
 .select-style select {
   padding: 4px 0 9px 0;
   margin: 0 0;
@@ -1016,11 +1072,11 @@ input[type=text]:focus, input[type=password]:focus {
   -moz-appearance: none;
   appearance: none; }
 
-/* line 223, ../components/sass/modules/_form.scss */
+/* line 224, ../components/sass/modules/_form.scss */
 .select-style select:focus {
   outline: none; }
 
-/* line 227, ../components/sass/modules/_form.scss */
+/* line 228, ../components/sass/modules/_form.scss */
 .login-label {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -1135,10 +1191,14 @@ input[type=text]:focus, input[type=password]:focus {
   margin-right: 6%; }
 
 /* line 108, ../components/sass/modules/_buttons.scss */
+.offset-left-10 {
+  margin-left: 10%; }
+
+/* line 112, ../components/sass/modules/_buttons.scss */
 .offset-margin-bottom-0 {
   margin: 0; }
 
-/* line 112, ../components/sass/modules/_buttons.scss */
+/* line 116, ../components/sass/modules/_buttons.scss */
 .offset-top-app-bar {
   margin-top: 1.125rem; }
 
