@@ -251,10 +251,6 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 10, ../components/sass/base/_base.scss */
-html, body {
-  height: 100%; }
-
 /* line 12, ../components/sass/base/_base.scss */
 body {
   font-size: 16px;
@@ -658,8 +654,11 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-top: 1.625rem;
   margin-bottom: 1.125rem;
   margin-left: 0; }
+  /* line 213, ../components/sass/layout/_layout.scss */
+  .visitor-headline.headline-sm {
+    font-size: 1.125rem; }
 
-/* line 214, ../components/sass/layout/_layout.scss */
+/* line 218, ../components/sass/layout/_layout.scss */
 .app-bar-headline {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -670,12 +669,12 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   display: inline-block;
   margin-left: 1.5rem; }
 
-/* line 227, ../components/sass/layout/_layout.scss */
+/* line 231, ../components/sass/layout/_layout.scss */
 .profile a img {
   display: block;
   margin: 0 auto;
   width: auto; }
-/* line 233, ../components/sass/layout/_layout.scss */
+/* line 237, ../components/sass/layout/_layout.scss */
 .profile a p {
   text-align: center;
   font-size: 0.875rem;
@@ -683,22 +682,22 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   color: #575757;
   margin-top: 0.75rem; }
 
-/* line 243, ../components/sass/layout/_layout.scss */
+/* line 247, ../components/sass/layout/_layout.scss */
 .unit-link {
   float: right;
   display: block;
   margin-top: 1.625rem; }
-  /* line 247, ../components/sass/layout/_layout.scss */
+  /* line 251, ../components/sass/layout/_layout.scss */
   .unit-link a {
     float: right;
     color: #E380CA; }
-    /* line 250, ../components/sass/layout/_layout.scss */
+    /* line 254, ../components/sass/layout/_layout.scss */
     .unit-link a img {
       margin: 0.3125rem 0 0 0.75rem;
       display: block;
       float: right; }
 
-/* line 259, ../components/sass/layout/_layout.scss */
+/* line 263, ../components/sass/layout/_layout.scss */
 .appt-text p {
   font-family: Lato-LightItalic;
   font-size: 1.125rem;
@@ -707,7 +706,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.375rem;
   text-align: center; }
 
-/* line 269, ../components/sass/layout/_layout.scss */
+/* line 273, ../components/sass/layout/_layout.scss */
 .btm-sep {
   border-bottom: 1px solid #AB3A8E;
   height: 1px;
@@ -716,12 +715,12 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   width: 20%;
   float: none !important; }
 
-/* line 278, ../components/sass/layout/_layout.scss */
+/* line 282, ../components/sass/layout/_layout.scss */
 .left {
   float: left !important; }
 
 /* Appointments */
-/* line 283, ../components/sass/layout/_layout.scss */
+/* line 287, ../components/sass/layout/_layout.scss */
 .appointment-table {
   display: block;
   overflow: hidden;
@@ -730,14 +729,14 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   background: #fff;
   margin-top: 0.75rem; }
 
-/* line 293, ../components/sass/layout/_layout.scss */
+/* line 297, ../components/sass/layout/_layout.scss */
 .appointment-title, .appointment-details {
   display: block;
   overflow: hidden;
   margin-top: 1.125rem;
-  margin-left: 7.0%; }
+  margin-left: 15%; }
 
-/* line 300, ../components/sass/layout/_layout.scss */
+/* line 304, ../components/sass/layout/_layout.scss */
 .appointment-title__list, .appointment-details__list {
   display: inline-block;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -745,15 +744,20 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   font-size: 1rem;
   color: #575757;
   line-height: 1.1875rem;
-  width: 16%; }
+  width: 43%; }
 
-/* line 310, ../components/sass/layout/_layout.scss */
+/* line 314, ../components/sass/layout/_layout.scss */
 .appointment-details {
   margin-top: 0;
   margin-left: 0;
+  padding-left: 3.125rem;
   border-bottom: 1px solid #E5E5E5; }
+  /* line 321, ../components/sass/layout/_layout.scss */
+  .appointment-details a {
+    display: block;
+    overflow: hidden; }
 
-/* line 317, ../components/sass/layout/_layout.scss */
+/* line 327, ../components/sass/layout/_layout.scss */
 .appointment-details__list {
   font-size: 1.125rem;
   letter-spacing: 0.025rem;
@@ -762,18 +766,41 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-bottom: 1.5rem;
   margin-right: 9%;
   float: left;
-  width: 16%;
+  width: 40%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden; }
 
-/* line 332, ../components/sass/layout/_layout.scss */
+/* line 342, ../components/sass/layout/_layout.scss */
 .no-margin-right {
   margin-right: 0; }
 
-/* line 336, ../components/sass/layout/_layout.scss */
+/* line 346, ../components/sass/layout/_layout.scss */
 .auto-width {
   width: auto; }
+
+/* line 351, ../components/sass/layout/_layout.scss */
+.unit-name span {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #AB3A8E;
+  letter-spacing: 0.0375rem;
+  line-height: 1.1875rem;
+  margin-top: 1.125rem;
+  padding-bottom: 0.25rem;
+  display: block; }
+/* line 363, ../components/sass/layout/_layout.scss */
+.unit-name h2 {
+  color: #AB3A8E;
+  font-size: 1.125rem; }
+/* line 368, ../components/sass/layout/_layout.scss */
+.unit-name.left {
+  float: left; }
+
+/* line 373, ../components/sass/layout/_layout.scss */
+.no-margin {
+  margin: 0; }
 
 /* line 7, ../components/sass/modules/_extends.scss */
 .form__btn, [class^="btn--"], .btn-login, .btn-search, .btn-check {
@@ -923,7 +950,7 @@ input[type=checkbox]:not(old),
 input[type=radio]:not(old) {
   width: 1.375rem;
   height: 1.25rem;
-  margin: 0.25rem 1.125rem 0 1.5rem;
+  margin: 0.25rem 1.5625rem 0 0;
   padding: 0;
   font-size: 1em;
   opacity: 1;

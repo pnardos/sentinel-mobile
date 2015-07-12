@@ -209,6 +209,10 @@
   margin-top: rem(26px);
   margin-bottom: rem(18px);
   margin-left: 0;
+  
+  &.headline-sm {
+    font-size: rem(18px);
+  }
 }
 
 .app-bar-headline {
@@ -294,7 +298,7 @@
   display: block;
   overflow: hidden;
   margin-top: rem(18px);
-  margin-left: percentage(7 / 100);
+  margin-left: percentage(15 / 100);
 }
 
 .appointment-title__list {
@@ -304,14 +308,20 @@
   font-size: rem(16px);
   color: $centuria-text;
   line-height: rem(19px);
-  width: 16%;
+  width: 43%;
 }
 
 .appointment-details {
   @extend .appointment-title;
   margin-top: 0;
   margin-left: 0;
+  padding-left: rem(50px);
   border-bottom: 1px solid $sentinel-gray;
+  
+  a {
+    display: block;
+    overflow: hidden;
+  }
 }
 
 .appointment-details__list {
@@ -323,7 +333,7 @@
   margin-bottom: rem(24px);
   margin-right: percentage(9 / 100);
   float: left;
-  width: 16%;
+  width: 40%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -335,4 +345,31 @@
 
 .auto-width {
   width: auto;
+}
+
+.unit-name {
+  span {
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: rem(14px);
+    color: $centuria;
+    letter-spacing: rem(0.6px);
+    line-height: rem(19px);
+    margin-top: rem(18px);
+    padding-bottom: rem(4px);
+    display: block;
+  }
+  
+  h2 {
+    color: $centuria;
+    font-size: rem(18px);
+  }
+  
+  &.left {
+    float: left;
+  }
+}
+
+.no-margin {
+  margin: 0;
 }
