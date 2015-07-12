@@ -639,7 +639,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* Visits */
 /* line 191, ../components/sass/layout/_layout.scss */
-.visits input[type=text] {
+.visits input[type=text], .visits input[type=number] {
   border-bottom: 1px solid #8E8E8E;
   color: #575757; }
 /* line 196, ../components/sass/layout/_layout.scss */
@@ -715,6 +715,10 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin: 0 auto;
   width: 20%;
   float: none !important; }
+
+/* line 278, ../components/sass/layout/_layout.scss */
+.left {
+  float: left !important; }
 
 /* line 7, ../components/sass/modules/_extends.scss */
 .form__btn, [class^="btn--"], .btn-login, .btn-search, .btn-check {
@@ -914,7 +918,7 @@ input[type=radio]:not(old):checked + label > span > span {
   background-image: linear-gradient(#b3d98c, #99cc66); }
 
 /* line 112, ../components/sass/modules/_form.scss */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=number] {
   margin-bottom: 2.25rem;
   width: 100%;
   background: transparent;
@@ -931,7 +935,7 @@ input[type=text], input[type=password] {
   letter-spacing: 0.025rem; }
 
 /* line 132, ../components/sass/modules/_form.scss */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   border-bottom: 1px solid #AB3A8E; }
 
 /* line 137, ../components/sass/modules/_form.scss */

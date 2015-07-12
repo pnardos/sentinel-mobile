@@ -188,7 +188,7 @@
 
 /* Visits */
 .visits {
-  input[type=text] {
+  input[type=text], input[type=number] {
     border-bottom: 1px solid $centuria-gray;
     color: $centuria-text;
   }
@@ -273,6 +273,10 @@
   margin: 0 auto;
   width: 20%;
   float: none !important;
+}
+
+.left {
+  float: left !important;
 }
 
 
