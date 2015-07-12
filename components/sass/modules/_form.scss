@@ -110,7 +110,7 @@ input[type=radio]:not(old):checked + label > span > span{
   background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=number] {
   margin-bottom: rem(36px);
   width: 100%;
   background: transparent;
@@ -130,7 +130,7 @@ input[type=text], input[type=password] {
   letter-spacing: rem(0.4px);
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   border-bottom: 1px solid $centuria;
 }
 
@@ -235,8 +235,3 @@ input[type=text]:focus, input[type=password]:focus {
   padding-bottom: rem(12px);
   display: block;
 }
-
-
-
-
-

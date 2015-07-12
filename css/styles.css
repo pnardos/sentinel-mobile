@@ -635,7 +635,7 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
 
 /* Visits */
 /* line 191, ../components/sass/layout/_layout.scss */
-.visits input[type=text] {
+.visits input[type=text], .visits input[type=number] {
   border-bottom: 1px solid #8E8E8E;
   color: #575757; }
 /* line 196, ../components/sass/layout/_layout.scss */
@@ -715,8 +715,12 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   width: 20%;
   float: none !important; }
 
+/* line 282, ../components/sass/layout/_layout.scss */
+.left {
+  float: left !important; }
+
 /* Appointments */
-/* line 283, ../components/sass/layout/_layout.scss */
+/* line 287, ../components/sass/layout/_layout.scss */
 .appointment-table {
   display: block;
   overflow: hidden;
@@ -725,14 +729,14 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   background: #fff;
   margin-top: 0.75rem; }
 
-/* line 293, ../components/sass/layout/_layout.scss */
+/* line 297, ../components/sass/layout/_layout.scss */
 .appointment-title, .appointment-details {
   display: block;
   overflow: hidden;
   margin-top: 1.125rem;
   margin-left: 15%; }
 
-/* line 300, ../components/sass/layout/_layout.scss */
+/* line 304, ../components/sass/layout/_layout.scss */
 .appointment-title__list, .appointment-details__list {
   display: inline-block;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -742,18 +746,18 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   line-height: 1.1875rem;
   width: 43%; }
 
-/* line 310, ../components/sass/layout/_layout.scss */
+/* line 314, ../components/sass/layout/_layout.scss */
 .appointment-details {
   margin-top: 0;
   margin-left: 0;
   padding-left: 3.125rem;
   border-bottom: 1px solid #E5E5E5; }
-  /* line 317, ../components/sass/layout/_layout.scss */
+  /* line 321, ../components/sass/layout/_layout.scss */
   .appointment-details a {
     display: block;
     overflow: hidden; }
 
-/* line 323, ../components/sass/layout/_layout.scss */
+/* line 327, ../components/sass/layout/_layout.scss */
 .appointment-details__list {
   font-size: 1.125rem;
   letter-spacing: 0.025rem;
@@ -767,15 +771,15 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   text-overflow: ellipsis;
   overflow: hidden; }
 
-/* line 338, ../components/sass/layout/_layout.scss */
+/* line 342, ../components/sass/layout/_layout.scss */
 .no-margin-right {
   margin-right: 0; }
 
-/* line 342, ../components/sass/layout/_layout.scss */
+/* line 346, ../components/sass/layout/_layout.scss */
 .auto-width {
   width: auto; }
 
-/* line 347, ../components/sass/layout/_layout.scss */
+/* line 351, ../components/sass/layout/_layout.scss */
 .unit-name span {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -786,15 +790,15 @@ h4, .headline-quad--grouped, .headline-quad, .headline-checkout--grouped {
   margin-top: 1.125rem;
   padding-bottom: 0.25rem;
   display: block; }
-/* line 359, ../components/sass/layout/_layout.scss */
+/* line 363, ../components/sass/layout/_layout.scss */
 .unit-name h2 {
   color: #AB3A8E;
   font-size: 1.125rem; }
-/* line 364, ../components/sass/layout/_layout.scss */
+/* line 368, ../components/sass/layout/_layout.scss */
 .unit-name.left {
   float: left; }
 
-/* line 369, ../components/sass/layout/_layout.scss */
+/* line 373, ../components/sass/layout/_layout.scss */
 .no-margin {
   margin: 0; }
 
@@ -997,7 +1001,7 @@ input[type=radio]:not(old):checked + label > span > span {
   background-image: linear-gradient(#b3d98c, #99cc66); }
 
 /* line 113, ../components/sass/modules/_form.scss */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=number] {
   margin-bottom: 2.25rem;
   width: 100%;
   background: transparent;
@@ -1014,7 +1018,7 @@ input[type=text], input[type=password] {
   letter-spacing: 0.025rem; }
 
 /* line 133, ../components/sass/modules/_form.scss */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   border-bottom: 1px solid #AB3A8E; }
 
 /* line 138, ../components/sass/modules/_form.scss */
