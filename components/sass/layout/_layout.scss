@@ -188,7 +188,7 @@
 
 /* Visits */
 .visits {
-  input[type=text] {
+  input[type=text], input[type=number] {
     border-bottom: 1px solid $centuria-gray;
     color: $centuria-text;
   }
@@ -275,6 +275,12 @@
   float: none !important;
 }
 
+<<<<<<< HEAD
+.left {
+  float: left !important;
+}
+
+=======
 /* Appointments */
 .appointment-table {
   display: block;
@@ -332,6 +338,7 @@
 .auto-width {
   width: auto;
 }
+>>>>>>> develop
 
 
 
