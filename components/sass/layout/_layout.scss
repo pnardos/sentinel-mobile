@@ -275,10 +275,70 @@
   float: none !important;
 }
 
+<<<<<<< HEAD
 .left {
   float: left !important;
 }
 
+=======
+/* Appointments */
+.appointment-table {
+  display: block;
+  overflow: hidden;
+  border-radius: $br--default;
+  border: 1px solid $sentinel-gray;
+  background: $white;
+  margin-top: rem(12px);
+}
+
+
+.appointment-title {
+  display: block;
+  overflow: hidden;
+  margin-top: rem(18px);
+  margin-left: percentage(7 / 100);
+}
+
+.appointment-title__list {
+  display: inline-block;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  font-size: rem(16px);
+  color: $centuria-text;
+  line-height: rem(19px);
+  width: 16%;
+}
+
+.appointment-details {
+  @extend .appointment-title;
+  margin-top: 0;
+  margin-left: 0;
+  border-bottom: 1px solid $sentinel-gray;
+}
+
+.appointment-details__list {
+  @extend .appointment-title__list;
+  font-size: rem(18px);
+  letter-spacing: rem(0.4px);
+  line-height: rem(22px);
+  margin-top: rem(24px);
+  margin-bottom: rem(24px);
+  margin-right: percentage(9 / 100);
+  float: left;
+  width: 16%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.no-margin-right {
+  margin-right: 0;
+}
+
+.auto-width {
+  width: auto;
+}
+>>>>>>> develop
 
 
 
