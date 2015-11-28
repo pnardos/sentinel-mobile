@@ -370,7 +370,7 @@
   h3 {
     color: $centuria;
     font-family: $font-family--primary;
-    font-weight: $font-weight--medium;
+    foeclipnt-weight: $font-weight--medium;
     font-size: rem(22px);
     margin-top: rem(40px);
   }
@@ -391,5 +391,13 @@
 
 .right {
   float: right;
+}
+
+.container-wrap {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
